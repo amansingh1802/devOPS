@@ -7,5 +7,11 @@ can you please give me DevOps class-notes
  ye ah bro sure
  
  when can you give me?
+<<<<<<< HEAD
  
  how much is the data??
+=======
+
+data is not more than un kbs
+
+can you give me in my pendrive
