@@ -1,0 +1,119 @@
+
+findBookByName()
+{
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter book name");
+	String bookname=sc.next();
+	
+	try 
+	{
+
+		List<books> BookList = dao.getBooks( );
+		for (books book : BookList) 
+		{
+			if (bookname== book.getName().substring )
+			{
+				System.out.println(book.toString());
+			}
+		}
+		
+		
+		
+	}
+	catch (Exception e) {
+		// TODO: handle exception
+	}
+	
+}
+
+
+
+
+findBookById()
+{
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter bookid");
+	int bookid=sc.nextInt();
+	
+	try 
+	{
+
+		List<copies> CopyList = dao.getBooks( );
+		for (copies copy : CopyList) 
+		{
+			if (bookid== copy.getBookid())
+			{
+				System.out.println(book.toString());
+			}
+			else 
+				System.out.println("no record found");
+		}
+		
+		
+		
+	}
+	catch (Exception e) {
+		// TODO: handle exception
+	}
+	
+	addNewBook();
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter id");
+		int id = sc.nextInt();
+		
+		System.out.println("eneter name");
+		String name = sc.next();
+		System.out.println("enter author");
+		String author = sc.next();
+
+		System.out.println("enter subject");
+		String subject = sc.next();
+
+		System.out.println("enter price");
+		float price = sc.nextFloat();
+		System.out.println("enter isbn");
+		String isbn = sc.next();
+		
+		
+			try(booksdao dao = new booksdao();)
+			{
+				books book = new Book(id,name,author,subject,price,isbn);
+				dao.insert( book );
+			
+			
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	addNewCopy()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter id");
+		int id = sc.nextInt();
+		System.out.println("Enter bookid");
+		int bookid = sc.nextInt();
+		
+		System.out.println("enter rack");
+		int rack = sc.nextInt();
+		System.out.println("enter status");
+		String status = sc.next();
+		
+		try(copies_dao dao = new copies_dao();)
+		{
+			copies copy = new copies(id,bookid,rack,status);
+			dao.insert( copy );
+		
+		
+	}
+	catch (Exception e) {
+		// TODO: handle exception
+	}
+
+
+	}
+	
+	
