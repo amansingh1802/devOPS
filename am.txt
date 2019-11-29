@@ -1,6 +1,41 @@
-sahd\
 
-hi aman
-hi chitos
+Scanner sc = new Scanner(System.in);
+int choice4;
+System.out.println("0. sign out");
+System.out.println("1. edit profile");
+System.out.println("2. change password");
+System.out.println("3. find ook by name");
+System.out.println("4. check book availability");
+System.out.println("5. list issued books");
+System.out.println("6. payment history");
+choice4 = sc.nextInt();
 
-dhsagdgAC
+switch (choice4) {
+
+case 0:
+	//sighnout
+	break;
+case 1:
+	//edit profilr
+	break;
+case 2:
+	// change password
+	break;
+case 3:
+	//find book by nme
+	break;
+	
+case 4:
+	//check book availabilty
+	break;
+	
+case 5:
+	//list issued books
+	break;
+case 6:
+	// paymwent history 
+	break ;
+	
+	
+}
+
